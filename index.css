@@ -125,28 +125,6 @@ button{
     pointer-events: none;
 }
 
-/* Styles pour les téléphones */
-@media (max-width: 720px) {
-    /* Mettez vos styles pour les téléphones ici */
-    .contain{
-        width: 20%;
-        height: auto;
-        max-width: 45%;
-        border: 2px red solid;
-    }
-}
-  
-  /* Styles pour les PC */
-@media (min-width: 721px) {
-    /* Mettez vos styles pour les PC ici */
-    .contain{
-        width: 20%;
-        height: auto;
-        max-width: 45%;
-        border: 2px red solid;
-    }
-}
-
 .popup {
     display: none;
     position: fixed;
@@ -213,4 +191,26 @@ input[type=text] {
 }
 .searchbarEN{
     display: none;
+}
+
+/* Styles pour les téléphones */
+@media (max-width: 720px) {
+    /* Mettez vos styles pour les téléphones ici */
+    .contain{
+        width: 20%;
+        height: auto;
+        max-width: 45%;
+        border: 2px red solid;
+    }
+}
+  
+  /* Styles pour les PC */
+@media (min-width: 721px) {
+    /* Mettez vos styles pour les PC ici */
+    .contain{
+        width: 20%;
+        height: auto;
+        max-width: 45%;
+        border: 2px red solid;
+    }
 }
