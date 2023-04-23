@@ -18,8 +18,8 @@ button{
 .language-switch {
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
+    width: auto;
     margin-bottom: 10px;
 }
   
@@ -194,7 +194,7 @@ input[type=text] {
 }
 
 /* Styles pour les téléphones */
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
     /* Mettez vos styles pour les téléphones ici */
     .contain{
         width: 20%;
@@ -202,14 +202,22 @@ input[type=text] {
         max-width: 45%;
         border: 2px red solid;
     }
-    button{
-        width: 80%;
-        height: 10%;
+    .language-switch button {
+        background-color: #ddd;
+        padding: 5px 10px;
+        border: none;
+        margin-right: 5px;
+        cursor: pointer;
+        width: 300px;
+        height: 100px;
+    }
+    .result{
+        font-size: 30px;
     }
 }
   
   /* Styles pour les PC */
-@media (min-width: 721px) {
+@media screen and (min-width: 721px) {
     /* Mettez vos styles pour les PC ici */
     .contain{
         width: 20%;
