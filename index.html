@@ -9,16 +9,36 @@
     
     <header></header>
 
-    <div class="container">
+    <div class="language-switch">
+        <button id="fr-btn" class="active">Français</button>
+        <button id="en-btn">Anglais</button>
+    </div>
+
+    <div class="searchdiv">
+        <input class="searchbarFR" id="searchbarFR" onkeyup="searchFR()" type="text" name="searchFR" placeholder="Rechercher">
+        <input class="searchbarEN" id="searchbarEN" onkeyup="searchEN()" type="text" name="searchEN" placeholder="Research">
+    </div>
+
+    <div class="containerFR">
         <div class="contain">
-            <p class="title">ABC</p>
+            <p class="title">Fraise</p>
             <div class="content">
                 <div class="topbar">
-                    <p class="title">ABC</p>
+                    <p class="title">Fraise</p>
                     <img src="img/close-btn.png" class="closepopup">
+                </div>
+                <div class="result">
+                    <p class="translate"><img src="img/flagFR.png" class="flag"> Fraise --> Strawberry <img src="img/flagEN.png" class="flag"></p>
+                    <p class="info"><img src="img/info.png" class="infoimg"> Pour désigner le fruit</p>
+                </div>
+                <div class="result">
+                    <p class="translate"><img src="img/flagFR.png" class="flag"> Fraise --> Drill <img src="img/flagEN.png" class="flag"></p>
+                    <p class="info"><img src="img/info.png" class="infoimg"> Pour désigner un outil machine, un appareil de dentiste par exemple</p>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="containerEN">
     </div>
 
     <script src="index.js"></script>

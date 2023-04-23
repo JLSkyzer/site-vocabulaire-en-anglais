@@ -5,15 +5,45 @@
     /* background-color: rgb(54, 54, 54); */
 }
 body{
-    background: url("./img/bg.png");
+    background: rgb(54, 54, 54);
     background-repeat: no-repeat;
     background-size: auto;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    color: black;
+    -moz-user-select: none;
+    user-select: none;
+}
+.language-switch {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+  
+  .language-switch button {
+    background-color: #ddd;
+    padding: 5px 10px;
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .language-switch button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+.containerEN{
+    display: none;
+}
+.containerFR{
+    display: flex;
 }
 
-.container{
+.containerFR, .containerEN{
     width: 100%;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,9 +53,30 @@ body{
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    -moz-user-select: none;
+    user-select: none;
 }
 .contain:hover {
     box-shadow: 0px 0px 10px 2px rgba(41, 184, 6, 0.8);
+}
+.result{
+    margin-top: 2.5rem;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+.flag{
+    height: 16px;
+    width: 24px;
+    vertical-align: middle;
+}
+.infoimg{
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+}
+.translate{
+    font-weight: bold;
 }
 
 
@@ -53,6 +104,8 @@ body{
     position: absolute;
     right: 10px;
     top: 10px;
+    -moz-user-select: none;
+    user-select: none;
 }
 .closepopup:hover{
     filter: brightness(0.5) hue-rotate(0deg);
@@ -106,8 +159,9 @@ body{
     max-width: 80%;
     max-height: 95%;
     padding: 20px;
-    background-color: rgb(44, 44, 44);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(207, 207, 207, 0.37);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.644);
     overflow: auto;
     border-radius: 20px;
 }
@@ -136,4 +190,27 @@ animation: popup-open 0.3s ease-in-out forwards; */
         transform: translate(-50%, -50%) scale(0.7);
         opacity: 0;
     }
+}
+
+
+
+input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 300px;
+    color: black;
+}
+.searchdiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.searchbarFR{
+    display: block;
+}
+.searchbarEN{
+    display: none;
 }
