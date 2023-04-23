@@ -202,6 +202,10 @@ input[type=text] {
         max-width: 45%;
         border: 2px red solid;
     }
+    button{
+        width: 80%;
+        height: 10%;
+    }
 }
   
   /* Styles pour les PC */
