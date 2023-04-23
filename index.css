@@ -47,6 +47,7 @@ button{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 5px;
 }
 .contain{
     overflow: hidden;
@@ -61,7 +62,7 @@ button{
 }
 .result{
     margin-top: 2.5rem;
-    font-size: 16px;
+    font-size: 22px;
     width: 100%;
     text-align: center;
 }
@@ -77,6 +78,9 @@ button{
 }
 .translate{
     font-weight: bold;
+}
+.example{
+    color: gold;
 }
 
 
@@ -194,7 +198,7 @@ input[type=text] {
 }
 
 /* Styles pour les téléphones */
-@media screen and (max-width: 720px) {
+@media (max-width: 720px) {
     /* Mettez vos styles pour les téléphones ici */
     .contain{
         width: 20%;
@@ -202,22 +206,10 @@ input[type=text] {
         max-width: 45%;
         border: 2px red solid;
     }
-    .language-switch button {
-        background-color: #ddd;
-        padding: 5px 10px;
-        border: none;
-        margin-right: 5px;
-        cursor: pointer;
-        width: 300px;
-        height: 100px;
-    }
-    .result{
-        font-size: 30px;
-    }
 }
   
   /* Styles pour les PC */
-@media screen and (min-width: 721px) {
+@media (min-width: 721px) {
     /* Mettez vos styles pour les PC ici */
     .contain{
         width: 20%;
